@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta</title>
+    <link rel="stylesheet" href="consulta.css">
+</head>
+<body>
+    <form action="" method="get">
+        <legend>Agende sua consulta</legend>
+        <fieldset>
+            <label class="contato" for="paciente">Nome do paciente:</label>
+            <input type="text" name="nome" id="paciente" required> 
+
+            <label class="contato" for="email">E-mail para confirmação:</label>
+            <input type="email" name="email" id="email" required>
+
+            <label class="contato" for="tel">Tel para contato:</label>
+            <input type="tel" name="contato" id="tel" required>
+            <br>
+            <br>
+
+            <label for="plano">Plano de saúde</label>
+            <select name="plano" id="plamo" required>
+                <option value="">--Escolha--</option>
+                <option value=" Particular"> Particular</option>
+                <option value="Unimed">Unimed</option>
+                <option value="Amil">Amil</option>
+                <option value="Bradesco">Bradesco Saúde</option>
+            </select>
+
+            <label for="especialidade">Especialidade Médica</label>
+            <select name="especialidade" id="especialidade" required>
+                <option value="">--Escolha--</option>
+                <option value=" Clínica Geral"> Clínica Geral</option>
+                <option value="Cardiologia">Cardiologia</option>
+                <option value="Dermatologia">Dermatologia</option>
+                <option value="Pediatria">Pediatria</option>
+            </select>
+
+            <label for="data">Data da consulta:</label>
+            <input type="date" name="consulta" id="data" required>
+
+            <label for="hora">Horario da consulta:</label>
+            <input type="time" name="horario" id="hora" required>
+            <br>
+            <br>
+
+            <label for="acesssibilidade">Necessita de alguma acesssibilidade?</label> <br>
+            <input type="checkbox" name="acess" id="acesssibilidade"> Intérprete de Libras <br>
+            <input type="checkbox" name="acess" id="acesssibilidade"> Espaço para Cão Guia <br>
+            <input type="checkbox" name="acess" id="acesssibilidade"> Acompanhante pessoal <br>
+            <br>
+
+            <label for="guia">Guia de encaminhamento:</label>
+            <input type="file" name="encaminhamento" id="guia" accept=".pdf, .docx" required>
+            <br>
+            <br>
+
+            <label for="sim">Primeira consulta na clinica?</label>
+            <input type="radio" name="primeira_consulta" id="sim" required> Sim
+
+            <label for="nao"></label>
+            <input type="radio" name="primeira_consulta" id="nao"> Não
+
+            <br>
+            <br>
+            <label for="agendar">Agendar Consulta:</label>
+            <input type="submit" name="enviar" id="agendar">
+
+
+        </fieldset>
+    </form>
+</body>
+</html>

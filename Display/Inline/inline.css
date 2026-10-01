@@ -1,0 +1,13 @@
+a{
+    border: 1px solid blue;
+}
+
+#block{
+
+    border: 1px solid blue;
+}
+
+#inline{
+    display: inline;
+    border: 1px solid red;
+}
