@@ -1,0 +1,18 @@
+body {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 30px;
+  border: 1px solid #f2f1f1;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #c1dcf0;
+}
+
+fieldset {
+  background-color: #fff;
+  border: solid 2px;
+}
+
+legend {
+  font-weight: 700;
+}
