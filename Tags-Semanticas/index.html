@@ -65,6 +65,59 @@
           <a href="#">Saiba mais</a>
         </article>
       </section>
+
+      <section>
+        <details>
+          <summary id="formulario">Envie uma sugestão</summary>
+          <form action="" method="get">
+            <fieldset>
+              <div class="campo">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" required />
+              </div>
+
+              <div class="campo">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" required />
+              </div>
+
+              <div class="campo">
+                <label for="tema">Assunto/Tema</label>
+                <input
+                  type="text"
+                  name="tema"
+                  id="tema"
+                  required
+                  placeholder="Ex: Introdução ao Python"
+                />
+              </div>
+
+              <div class="campo">
+                <label for="msg">O que você gostaria de aprender?</label>
+                <textarea
+                  name="mensagem"
+                  id="msg"
+                  rows="10"
+                  cols="30"
+                  required
+                  placeholder="Tem alguma ideia para o DevLog?
+Envie uma sugestão de tema que você gostaria de ver por aqui."
+                ></textarea>
+              </div>
+              <br />
+
+              <div class="botao">
+                <input
+                  type="submit"
+                  value="Enviar sugestão"
+                  name="enviar"
+                  id="enviar"
+                />
+              </div>
+            </fieldset>
+          </form>
+        </details>
+      </section>
     </main>
 
     <!-- Conteúdo lateral - Relação com o tema principal -->
