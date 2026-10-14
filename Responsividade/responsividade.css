@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "cabecalho"
+    "navegacao"
+    "principal"
+    "rodape";
+}
+
+header {
+  position: relative;
+  grid-area: cabecalho;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(2, 29, 67);
+  color: #fff;
+}
+
+nav {
+  position: relative;
+  grid-area: navegacao;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(69, 4, 77);
+  color: #fff;
+}
+
+.container2 {
+  position: relative;
+  grid-area: principal;
+  display: flex;
+}
+
+.lateral {
+  position: relative;
+  width: 25%;
+  height: 550px;
+  background-color: rgb(97, 26, 240);
+  color: #fff;
+  text-align: center;
+}
+
+main {
+  position: relative;
+  width: 50%;
+  height: 550px;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 550px;
+  background-color: rgb(5, 5, 141);
+  color: #fff;
+  text-align: center;
+}
+
+aside {
+  position: relative;
+  width: 25%;
+  height: 550px;
+  background-color: rgb(32, 0, 61);
+  color: #fff;
+  text-align: center;
+}
+
+footer {
+  position: relative;
+  width: 100;
+  height: 62px;
+  background-color: rgb(4, 61, 74);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .container2 {
+    flex-direction: column;
+  }
+
+  .lateral,
+  main,
+  aside {
+    width: 100%;
+  }
+}
