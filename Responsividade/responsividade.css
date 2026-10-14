@@ -7,6 +7,9 @@
 
 .container {
   position: relative;
+  width: 90%;
+  height: auto;
+  margin: 2% auto;
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto;
