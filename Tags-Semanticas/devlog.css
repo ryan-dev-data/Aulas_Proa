@@ -215,3 +215,62 @@ footer {
   background-color: rgba(60, 116, 194, 1);
   color: #fff;
 }
+
+@media (max-width: 600px) {
+  fieldset {
+    width: 90%;
+    padding: 20px;
+  }
+
+  #cabecalho {
+    height: auto;
+    padding: 20px;
+  }
+
+  #cabecalho h1 {
+    font-size: 40px;
+  }
+
+  #nav_p {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .arti {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .campo {
+    width: 100%;
+  }
+
+  .campo input,
+  .campo textarea {
+    width: 100%;
+  }
+
+  /* SOBRE O AUTOR */
+  #sec2 {
+    width: 90%;
+    padding: 20px;
+  }
+
+  figure {
+    width: 40%;
+  }
+
+  #cont_details {
+    width: 100%;
+    padding: 15px;
+  }
+
+  /* RODAPÉ */
+  footer {
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+}
