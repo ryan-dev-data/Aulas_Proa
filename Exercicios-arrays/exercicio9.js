@@ -7,7 +7,7 @@ if (emailsCadastrados.includes(novoEmail)) {
 } else {
   emailsCadastrados.push(novoEmail);
   console.log("Cadastro realizado com sucesso!");
-  for (i = 0; i < emailsCadastrados.length; i++) {
+  for (let i = 0; i < emailsCadastrados.length; i++) {
     console.log(emailsCadastrados[i]);
   }
 }
